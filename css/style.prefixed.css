@@ -49,28 +49,11 @@
 
 .fa-pulse {
 	display: inline-block;
-	-moz-animation: pulse 2s infinite linear;
-	-o-animation: pulse 2s infinite linear;
 	-webkit-animation: pulse 2s infinite linear;
 	animation: pulse 2s infinite linear;
 }
 
 @-webkit-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-moz-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-o-keyframes pulse {
-	0% { opacity: 1; }
-	50% { opacity: 0; }
-	100% { opacity: 1; }
-}
-@-ms-keyframes pulse {
 	0% { opacity: 1; }
 	50% { opacity: 0; }
 	100% { opacity: 1; }
@@ -139,37 +122,38 @@ nav .menu ul li a:hover {
 	outline: none;
 	border-color: #fff;
 }
-section.numbers .item {
+.stats {
 	display: block;
 	float: left;
 	text-align: center;
-	width: 33%;
 }
-section.numbers .item i {
+.stats i {
 	font-size: 46px;
 	color: #00c7e8;
-	margin-top: 25px;
+	margin: 5px;
 }
-section.numbers .item span {
+.stats h3 {
+	margin: 5px;
+}
+.stats span {
+	font-size: 16px;
 	text-transform: uppercase;
 	color: #00c7e8;
-	text-align: center;
 	font-weight: bold;
-	font-size: 115%;
 }
-section.movie .item {
+.video {
 	display: block;
 	float: left;
 	text-align: center;
 }
-section.movie .item video {
+.video video {
 	width:100%;
 	max-width: 500px;
 	height: auto;
 	text-align: center;
 	padding: 0 20px; 
 }
-section.movie .item figcaption {
+.video video figcaption {
 	text-align: center;
 }
 
@@ -204,7 +188,6 @@ section > .container {
 		text-align: center;
 		padding: 0 9px;
 	}
-	
 }
 
 /*urządzenia średnie*/
@@ -234,7 +217,7 @@ section > .container {
 		float: left;
 		padding: 0 9px;
 	}
-	
+
 }
 
 /*urządzenia małe (tablety)*/
@@ -275,7 +258,6 @@ section > .container {
 	.hero {
 		margin-top: 125px;
 	}
-
 }
 
 /*urządzenia bardzo małe (telefony)*/
@@ -316,36 +298,34 @@ section > .container {
 	.hero {
 		margin-top: 1px;
 	}
-	section.numbers .item {
+	.stats {
 		display: block;
 		float: none;
 		text-align: center;
 		width: 100%;
 	}
-	section.numbers .item i {
+
+	.stats i {
 		font-size: 46px;
 		color: #00c7e8;
 		margin-top: 25px;
 	}
-	section.numbers .item span {
-		text-transform: uppercase;
-		color: #00c7e8;
+	.stats span {
+		display: block;
+		float: none;
 		text-align: center;
-		font-weight: bold;
 	}
-	section.movie .item {
+	.video {
 		display: block;
 		float: none;
 		width: 100%;
 		text-align: center;
-		font-weight: 400;
-		padding: 0 20px;
 	}
-	section.movie .item h4 {
-		font-size: 110%;
+	.video video {
+		text-align: center;
+		padding: 0 20px; 
 	}
-	section.movie .item figcaption {
+	.video video figcaption {
 		text-align: center;
 	}
-
 }
