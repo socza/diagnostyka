@@ -47,7 +47,7 @@
 .col-offest-10 {margin-left: 83.33%;}
 .col-offest-11 {margin-left: 91.66%;}
 
-.fa-pulse {
+.pulse {
 	display: inline-block;
 	-webkit-animation: pulse 2s infinite linear;
 	animation: pulse 2s infinite linear;
@@ -187,6 +187,14 @@ section > .container {
 		text-align: center;
 		padding: 0 9px;
 	}
+	nav .menu ul ul  {
+		display: none;
+	}
+	nav .menu ul li:hover ul {
+		display: block;
+		position: absolute;
+		background: #4577ED;
+	}	
 	
 }
 
@@ -255,6 +263,7 @@ section > .container {
 		float: none;
 		padding: 0 4px;
 	}
+	
 	.hero {
 		margin-top: 125px;
 	}
@@ -290,11 +299,26 @@ section > .container {
 		float: none;
 		width: 100%;
 		line-height: 30px;
+		padding: 0;
 	}
 	nav .menu ul li {
 		display: block;
 		float: none;
 		font-size: 120%;
+	}
+	nav .menu ul ul  {
+		display: none;
+	}
+	nav .menu ul li:hover ul {
+		display: block;
+		position: absolute;
+		background-color: #A7A9AC;
+		width: 100%;
+		border-top: 1px solid #7C8EA4;
+		border-bottom: 1px solid #7C8EA4;
+	}
+	nav .menu ul ul li a {
+		color: white;
 	}
 	.hero {
 		margin-top: 1px;
@@ -321,7 +345,6 @@ section > .container {
 		float: none;
 		width: 100%;
 		text-align: center;
-		font-weight: 400;
 		padding: 0 20px;
 	}
 	section.movie .item h4 {
